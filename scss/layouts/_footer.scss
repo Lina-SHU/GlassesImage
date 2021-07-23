@@ -1,0 +1,152 @@
+/* footer */
+.footer{
+  padding-top: $spacer*4;
+  padding-bottom: $spacer*5;
+  background: $primary;
+  color: $white;
+  @include pad{
+    padding-bottom: $spacer*4;
+  }
+  @include mobile{
+    padding: $spacer*3 0;
+    .contact-content{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  .footerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerMenuList{
+    display: flex;
+    @include mobile{
+      display: none;
+    }
+    li{
+      padding: 0 $spacer*3;
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+    a{
+      color: $white;
+      display: block;
+      &:hover{
+        color: yellow;
+      }
+    }
+  }
+  .socialList{
+    display: flex;
+    align-items: center;
+    li{
+      margin-right: $spacer*4;
+      @include mobile{
+        margin-right: $spacer*3;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    a{
+      display: block;
+      color: $white;
+      i{
+        font-size: $font*6;
+        &:hover{
+          color: yellow;
+        }
+        @include pad{
+          font-size: $font*3;
+        }
+      }
+    }
+  }
+  .contactList{
+    @include pad{
+      margin-bottom: 0;
+    }
+    li{
+      display: flex;
+      @include pad{
+        font-size: $font-lg;
+        &:first-child{
+          margin-bottom: 12px;
+          @include mobile{
+            margin-bottom: 6px;
+          }
+        }
+        &:last-child{
+          margin-bottom: 20px;
+          @include mobile{
+            margin-bottom: $spacer*3;
+          }
+        }
+      }
+      @include mobile{
+        font-size: $font*2;
+      }
+      .contact-img{
+        width: 36px;
+        margin-right: 20px;
+        @include pad{
+          width: 24px;
+          margin-right: 10px;
+        }
+        @include mobile{
+          width: 16px;
+        }
+      }
+    }
+    a{
+      display: block;
+      color: $white;
+      &:hover{
+        color: yellow;
+      }
+    }
+  }
+  .copyrightList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $spacer*4;
+    border-top: 1px solid $white;
+    @include pad{
+      padding-top: $spacer*3;
+    }
+    @include mobile{
+      flex-wrap: wrap;
+      font-size: $font-sm;
+      padding-top: $spacer*2;
+      li{
+        width: 100%;
+      }
+    }
+    .privacyList{
+      display: flex;
+      justify-content: space-between;
+      @include pad{
+        font-size: $font-sm;
+      }
+      @include mobile{
+        flex-wrap: wrap;
+      }
+      li{
+        margin-left: $spacer*6;
+        @include pad{
+          margin-left: $spacer*3;
+        }
+        @include mobile{
+          width: 100%;
+          margin-left: 0;
+          margin-top: $spacer;
+        }
+      }
+    }
+  }
+}

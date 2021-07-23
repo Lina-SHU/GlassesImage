@@ -1,0 +1,15 @@
+@import './reset';
+@import './varable';
+@import './mixins';
+@import './util';
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/pagination';
+@import './layouts/card';
+
+@import 'pages/index';
+@import 'pages/product';
+@import 'pages/location';
+@import 'pages/blog';
+@import 'pages/faq';
+@import 'pages/store';

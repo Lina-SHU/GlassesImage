@@ -1,0 +1,40 @@
+
+/* pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacer*20;
+  font-size: 18px;
+  @include pad{
+    margin-bottom: $spacer*12;
+  }
+  @include mobile{
+    font-size: $font*2;
+    margin-bottom: $spacer*7;
+  }
+  a{
+    display: block;
+    padding: 12px $spacer*2;
+    color: #000;
+    border: 1px solid #555555;
+    &:hover{
+      background: #000;
+      color: $white;
+    }
+    @include mobile{
+     padding: 12px 14px; 
+    }
+  }
+  .page-active{
+    background: #000;
+    color: $white;
+  }
+  .pre_page, .next_page{
+    padding-right: 12px;
+    padding-left: 12px;
+    @include mobile{
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  }
+}

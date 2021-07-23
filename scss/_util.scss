@@ -1,0 +1,114 @@
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding:0 15px;
+  @include pad{
+    padding: 0 39px;
+  }
+  @include mobile{
+    padding: 0 15px;
+  }
+}
+
+.mb-1{
+  margin-bottom: $spacer;
+}
+
+.mb-2{
+  margin-bottom: $spacer *2;
+}
+
+.mb-3{
+  margin-bottom: $spacer *3;
+}
+
+.mb-4{
+  margin-bottom: $spacer *4;
+}
+
+.mb-5{
+  margin-bottom: $spacer *5;
+}
+
+.mb-6{
+  margin-bottom: $spacer *6;
+}
+
+.mb-7{
+  margin-bottom: 60px;
+}
+
+.mb-8{
+  margin-bottom: $spacer *8;
+}
+
+.mb-9{
+  margin-bottom: $spacer *9;
+}
+
+.mb-10{
+  margin-bottom: $spacer *10;
+}
+
+.pb-5{
+  padding-bottom: $spacer *5;
+}
+
+.pb-10{
+  padding-bottom: $spacer *10;
+}
+
+
+.pt-5{
+  padding-top:  $spacer *5;
+}
+
+.pt-6{
+  padding-top: 60px;
+}
+
+.pl-4{
+  padding-left: $spacer *4;
+}
+
+.pr-4{
+  padding-right: $spacer *4;
+}
+
+.h1{
+  font-size: $font *9; // 72px
+  color: $primary;
+  font-weight: bold;
+}
+
+.h2{
+  font-size: $font *8; // 64px
+  color: $content;
+  font-weight: bold;
+}
+
+.h3{
+  font-size: $font *6; // 48px
+  color: $content;
+  font-weight: bold;
+}
+
+.h4{
+  font-size: $font *4; // 32px;
+  color: $content;
+}
+
+.h5{
+  font-size: $font *3; // 24px;
+  color: $content;
+  font-weight: bold;
+}
+
+.small-font{
+  font-size: 20px;
+}
+
+.text-center{
+  text-align: center;
+}
+

@@ -1,0 +1,53 @@
+.store{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $spacer*20;
+  @include pad{
+    margin-bottom: $spacer*12;
+  }
+  @include mobile{
+    margin-bottom: $spacer*7;
+  }
+}
+
+.store-content{
+  width: 40%;
+  .location-content{
+    border:1px solid #00000020;
+  }
+  @include pad{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer*4;
+    .location-img{
+      width: 48%;
+    }
+    .location-content{
+      width: 48%;
+    }
+  }
+  @include mobile{
+    display: block;
+    margin-bottom: $spacer*2;
+    .location-img, .location-content{
+      width: 100%;
+    }
+  }
+}
+
+.store-img{
+  width: 58%;
+  @include pad{
+    width: 100%;
+    height: 422px;
+  }
+  @include mobile{
+    height: 211px;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
