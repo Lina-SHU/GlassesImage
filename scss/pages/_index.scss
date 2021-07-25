@@ -1,6 +1,7 @@
 .banner{
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png') no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: calc(100vh - 104px);
   @include pad{
     background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png') no-repeat;
     background-position: center;
