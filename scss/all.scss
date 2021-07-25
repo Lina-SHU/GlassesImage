@@ -4,8 +4,8 @@
 @import './util';
 @import './layouts/header';
 @import './layouts/footer';
-@import './layouts/pagination';
-@import './layouts/card';
+@import './components/pagination';
+@import './components/card';
 
 @import 'pages/index';
 @import 'pages/product';
