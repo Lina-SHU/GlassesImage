@@ -69,9 +69,18 @@
   }
   li{
     width: 50%;
-  }
-  img{
-    object-fit: cover;
+    height: 304px;
+    @include mobile{
+      height: 148px;
+    }
+    &:first-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png') no-repeat center center;
+      background-size: cover;
+    }
+    &:last-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png') no-repeat center center;
+      background-size: cover;
+    }
   }
 }
 

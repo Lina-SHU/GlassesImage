@@ -1,0 +1,271 @@
+.article-menu{
+  @include mobile{
+    display: block;
+    .blogMenuList{
+      width: 1005px;
+      justify-content: space-between;
+      a{
+        padding-right: 12px;
+        padding-left: 12px;
+        font-size: $font-sm;
+      }
+      li:last-child{
+        margin-right: -12px;
+      }
+    }
+    a{
+      display: none;
+    }
+  }
+}
+
+.breadcrumb{
+  display: flex;
+  li:first-child{
+    margin-left: -8px;
+  }
+  a{
+    color: #000;
+    margin: 0 $spacer;
+    &:hover{
+      text-decoration: underline;
+    }
+    @include pad{
+      font-size: $font-sm;
+    }
+  }
+  .active{
+    color: $primary;
+  }
+}
+
+.tags{
+  display: flex;
+  li{
+    margin-right: $spacer*2;
+    color: $primary;
+    font-size: $font*3;
+    font-weight: bold;
+    @include pad{
+      font-size: $font*2;
+      margin-right: $spacer;
+    }
+    @include mobile{
+      font-size: $font-sm;
+      margin-right: $spacer/2;
+    }
+  }
+}
+
+.article{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: $spacer*20;
+  @include pad{
+    margin-bottom: $spacer*12;
+  }
+}
+.article-content{
+  width: 70%;
+  @include mobile{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  h2{
+    font-size: $font*6;
+    @include pad{
+      font-size: $font*4;
+      margin-bottom: $spacer/2;
+    }
+    @include mobile{
+      color: $content;
+      font-size: $font-lg;
+      margin-bottom: 0;
+    }
+  }
+  .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacer*3;
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  h3{
+    font-size: 28px;
+    @include pad{
+      font-size: $font*2;
+    }
+    @include mobile{
+      font-size: $font-sm;
+    }
+  }
+  >p{
+    color: #6C6C6C;
+    @include pad{
+      font-size: $font-sm;
+    }
+  }
+  .articleList{
+    margin-bottom: 50px;
+    @include pad{
+      margin-bottom: 30px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+    li{
+      margin-bottom: $spacer*5;
+      @include pad{
+        margin-bottom: $spacer*3;
+      }
+    }
+    img{
+      width: 100%;
+      @include pad{
+        margin-bottom: $spacer*2;
+      }
+    }
+    span{
+      display: block;
+      @include mobile{
+        display: inline;
+      }
+    }
+    .conclusion{
+      margin-top: 32px;
+      @include pad{
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.article-tags{
+  width: 25%;
+  color: $primary;
+  font-weight: bold;
+  @include mobile{
+    width: 100%;
+  }
+  h2{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: $spacer;
+    @include pad{
+      font-size: $font-lg;
+    }
+    img{
+      width: 48px;
+      @include pad{
+        width: 24px;
+      }
+    }
+  }
+  .tagList{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      font-size: $font*3;
+      margin-right: $spacer*3;
+      @include pad{
+        font-size: $font*2;
+        margin-right: $spacer*2;
+      }
+      @include mobile{
+        margin-right: $spacer;
+      }
+    }
+  }
+}
+
+.share{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: $spacer*3;
+  @include pad{
+    margin-bottom: $spacer*2;
+  }
+  @include mobile{
+    padding-bottom: $spacer*2;
+    margin-bottom: 10px;
+  }
+  >a{
+    color: #000;
+    margin-right: 20px;
+    font-size: $font-lg;
+    font-weight: bold;
+    &:hover{
+      text-decoration: underline;
+      color: $primary;
+    }
+    @include pad{
+      margin-right: $spacer*2;
+      font-size: $font*2;
+    }
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    a{
+      color: #000;
+      margin-right: $spacer*2;
+      display: block;
+      height: 24px;
+      @include pad{
+        height: 20px;
+      }
+    }
+    i{
+      font-size: $font*3;
+      width: 24px;
+      @include pad{
+        font-size: $font-lg;
+      }
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+}
+
+.article-select{
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    display: block;
+  }
+  li{
+    display: flex;
+    align-items: center;
+    @include mobile{
+      &:last-child{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 6px;
+      }
+    }
+  }
+  a{
+    color:#000;
+    margin: 0 $spacer;
+    @include pad{
+      margin: 0 $spacer/2;
+    }
+    @include mobile{
+      margin: 0;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  i{
+    font-size: $font*3;
+  }
+}

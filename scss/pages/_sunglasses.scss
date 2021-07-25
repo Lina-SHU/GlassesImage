@@ -1,0 +1,40 @@
+.sunglassesBanner{
+  li{
+    &:first-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png') no-repeat center center;
+      background-size: cover;
+    }
+    &:last-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+.sunglasses{
+  margin-bottom: $spacer*8;
+  @include pad{
+    margin-bottom: 0;
+  }
+  .product{
+    >li{
+      width: 31%;
+      @include pad{
+        width: 48%;
+      }
+      @include mobile{
+        width: 100%;
+      }
+    }
+    img{
+      object-fit: cover;
+      object-position: 15% 75%;
+    }
+  }
+  .pagination-show{
+    display: none;
+    @include pad{
+      display: block;
+    }
+  }
+}
