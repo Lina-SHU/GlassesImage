@@ -669,7 +669,7 @@ select:focus {
 
 .banner {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat;
-  height: 840px;
+  height: 100vh;
 }
 
 @media (max-width: 992px) {
