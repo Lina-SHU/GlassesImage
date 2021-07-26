@@ -13,25 +13,24 @@
 
 .store-content{
   width: 40%;
-  .location-content{
-    border:1px solid #00000020;
-  }
   @include pad{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: $spacer*4;
-    .location-img{
+    border: 0;
+    .card-img{
       width: 48%;
     }
-    .location-content{
+    .card-body{
+      border:1px solid #00000020;
       width: 48%;
     }
   }
   @include mobile{
     display: block;
     margin-bottom: $spacer*2;
-    .location-img, .location-content{
+    .card-img, .card-body{
       width: 100%;
     }
   }

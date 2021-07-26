@@ -612,56 +612,53 @@ select:focus {
   }
 }
 
-.location-img {
+.card {
+  border: 1px solid #00000020;
+}
+
+.card-img {
   height: 224px;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden;
 }
 
 @media (max-width: 992px) {
-  .location-img {
+  .card-img {
     height: 164px;
   }
 }
 
-.location-content {
-  border-left: 1px solid #00000020;
-  border-right: 1px solid #00000020;
-}
-
-.location-content h3 {
+.card-body h3 {
   color: #000;
   padding: 12px 24px;
   border-bottom: 1px solid #00000020;
 }
 
 @media (max-width: 992px) {
-  .location-content h3 {
+  .card-body h3 {
     padding: 8px 24px;
     font-size: 16px;
   }
 }
 
-.location-contact {
+.card-content {
   padding: 16px 24px;
   font-size: 20px;
 }
 
 @media (max-width: 992px) {
-  .location-contact {
+  .card-content {
     font-size: 14px;
   }
 }
 
-.location-contact i {
+.card-content i {
   width: 18px;
   margin-right: 10px;
   font-size: 18px;
 }
 
 @media (max-width: 992px) {
-  .location-contact i {
+  .card-content i {
     width: 16px;
     font-size: 16px;
   }
@@ -2248,10 +2245,6 @@ select:focus {
   width: 40%;
 }
 
-.store-content .location-content {
-  border: 1px solid #00000020;
-}
-
 @media (max-width: 992px) {
   .store-content {
     width: 100%;
@@ -2262,11 +2255,13 @@ select:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 32px;
+    border: 0;
   }
-  .store-content .location-img {
+  .store-content .card-img {
     width: 48%;
   }
-  .store-content .location-content {
+  .store-content .card-body {
+    border: 1px solid #00000020;
     width: 48%;
   }
 }
@@ -2276,7 +2271,7 @@ select:focus {
     display: block;
     margin-bottom: 16px;
   }
-  .store-content .location-img, .store-content .location-content {
+  .store-content .card-img, .store-content .card-body {
     width: 100%;
   }
 }

@@ -1,14 +1,14 @@
-.location-img{
+.card{
+  border: 1px solid #00000020;
+}
+.card-img{
   height: 224px;
-  object-fit: cover;
   overflow: hidden;
   @include pad{
     height: 164px;
   }
 }
-.location-content{
-  border-left: 1px solid #00000020;
-  border-right: 1px solid #00000020;
+.card-body{
   h3{
     color: #000;
     padding: 12px $spacer*3;
@@ -19,7 +19,7 @@
     }
   }
 }
-.location-contact{
+.card-content{
   padding: $spacer*2 $spacer*3;
   font-size: $font-lg;
   @include pad{
