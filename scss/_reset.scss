@@ -70,15 +70,3 @@ a{
 select:focus{
 	outline: none;
 }
-
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding:0 15px;
-  @include pad{
-    padding: 0 39px;
-  }
-  @include mobile{
-    padding: 0 15px;
-  }
-}
