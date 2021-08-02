@@ -2,10 +2,13 @@
   border: 1px solid #00000020;
 }
 .card-img{
-  height: 224px;
-  overflow: hidden;
-  @include pad{
-    height: 164px;
+  img{
+    height: 224px;
+    width: 100%;
+    object-fit: cover;
+    @include pad{
+      height: 164px;
+    }
   }
 }
 .card-body{

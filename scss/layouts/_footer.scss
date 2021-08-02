@@ -27,14 +27,14 @@
       display: none;
     }
     li{
-      padding: 0 $spacer*3;
       &:first-child{
-        padding-left: 0;
+        margin-left: -24px;
       }
     }
     a{
       color: $white;
       display: block;
+      padding: 0 $spacer*3;
       &:hover{
         color: yellow;
       }
@@ -44,17 +44,20 @@
     display: flex;
     align-items: center;
     li{
-      margin-right: $spacer*4;
-      @include mobile{
-        margin-right: $spacer*3;
-      }
       &:last-child{
-        margin-right: 0;
+        margin-right: -32px;
+        @include mobile{
+          margin-right: -24px;
+        }
       }
     }
     a{
       display: block;
       color: $white;
+      margin-right: $spacer*4;
+      @include mobile{
+        margin-right: $spacer*3;
+      }
       i{
         font-size: $font*6;
         &:hover{
@@ -136,8 +139,13 @@
       @include mobile{
         flex-wrap: wrap;
       }
-      li{
+      a{
+        display: block;
+        color: $white;
         margin-left: $spacer*6;
+        &:hover{
+          color: yellow;
+        }
         @include pad{
           margin-left: $spacer*3;
         }

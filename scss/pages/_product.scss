@@ -1,6 +1,7 @@
 .productMenuList{
   display: flex;
-  li{
+  .productMenuList-item{
+    display: block;
     width: 33.33%;
     &:first-child{
       border-left: 1px solid #DCDCDC;
@@ -14,9 +15,9 @@
     }
   }
   img{
-    width: 44px;
     height: 44px;
     margin-right: 10px;
+    object-fit: cover;
     @include pad{
       width: 30px;
       height: 30px;
@@ -125,10 +126,13 @@
     }
   }
   .product-img{
-    height: 164px;
-    overflow: hidden;
     img{
+      object-fit: cover;
       width: 100%;
+      height: 164px;
+      @include mobile{
+        height: 166px;
+      }
     }
   }
   .product-content{
@@ -138,7 +142,7 @@
     @include mobile{
       font-size: $font*2;
     }
-    span{
+    p{
       color: $primary;
     }
   }
