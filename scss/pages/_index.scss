@@ -43,6 +43,29 @@
 
 .features{
   background: $bg-color;
+  @include pad{
+    padding-top: $spacer *5;
+    padding-bottom: $spacer *2;
+    margin-bottom: $spacer *5;
+    h4{
+      margin-bottom: $spacer;
+    }
+  }
+  @include mobile{
+    padding-top: $spacer *4;
+    padding-bottom: 0px;
+    margin-bottom: $spacer *4;
+  }
+  h2{
+    @include pad{
+      font-size: $font *4;
+      margin-bottom: $spacer *5;
+    }
+    @include mobile{
+      font-size: $font *3;
+      margin-bottom: 28px;
+    }
+  }
   .featureList{
     display: flex;
     flex-wrap: wrap;
@@ -70,33 +93,12 @@
       width: 83px;
     }
   }
-  @include pad{
-    padding-top: $spacer *5;
-    padding-bottom: $spacer *2;
-    margin-bottom: $spacer *5;
-    h3{
-      font-size: $font *4;
-      margin-bottom: $spacer *5;
-    }
-    h4{
-      margin-bottom: $spacer;
-    }
-  }
-  @include mobile{
-    padding-top: $spacer *4;
-    padding-bottom: 0px;
-    margin-bottom: $spacer *4;
-    h3{
-      font-size: $font *3;
-      margin-bottom: 28px;
-    }
-  }
 }
 
 .classic{
   @include pad{
     margin-bottom: $spacer *7;
-    h3{
+    h2{
       font-size: $font*4;
       margin-bottom: $spacer*4;
       @include mobile{
@@ -172,7 +174,7 @@
     padding-bottom: $spacer*5;
     margin-bottom: $spacer *4;
   }
-  h3{
+  h2{
     color: $white;
     @include pad{
       font-size: $font*4;
@@ -224,13 +226,13 @@
 .recommand{
   @include pad{
     margin-bottom: $spacer*3;
-    h3{
+    h2{
       font-size: $font*4;
       margin-bottom: $spacer*4;
     }
   }
   @include mobile{
-    h3{
+    h2{
       font-size: $font-lg;
       margin-bottom: 20px;
     }
@@ -301,7 +303,7 @@
     padding-top: 30px;
     padding-bottom: $spacer*5;    
   }
-  h3{
+  h2{
     color: #000;
     @include pad{
       font-size: $font*4;
